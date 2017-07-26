@@ -6,7 +6,78 @@
 </head>
 
 <body>
-  <p>Testing this</p>
+  <form>
+    <table>
+      <tr>
+        <td>Pokemon: </td>
+        <td><input type="text" name="pokemon list="pokeList" />
+          <datalist id="pokeList">
+            <option value="Loading..." />
+          </datalist>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Nature: </td>
+        <td><input type="text" name="nat" list="natList" />
+          <datalist id="natList>
+            <option value="Loading..." />
+          </datalist>
+        </td>
+      </tr>
+  
+      <tr><td>Level: </td><td><input type="text" id="lvl" /></td></tr>
+    </table>
+    <datalist id="judgeList">
+      <option value="No Good" />
+      <option value="Decent" />
+      <option value="Pretty Good" />
+      <option value="Very Good" />
+      <option value="Fantastic" />
+      <option value="Best" />
+    </datalist>
+    <table>
+      <tr>
+        <td>HP: </td><td><input type="text" name="hp" size="5px" /></td><td>  </td>
+        <td>EV: </td><td><input type="text" name="evhp" size="5px" /></td>
+        <td>Judge: </td><td><input type="text" name="jhp" size="10px" list="judgeList"/></td>
+        <td>IV: </td><td><input type="text" id="ivhp" size="5px" disabled />
+      </tr>
+      <tr>
+        <td>Attack: </td><td><input type="text" name="atk" size="5px"/></td><td>  </td>
+        <td>EV: </td><td><input type="text" name="evatk" size="5px"/></td>
+        <td>Judge: </td><td><input type="text" name="jatk" size="10px" list="judgeList"/></td>
+        <td>IV: </td><td><input type="text" id="ivatk" size="5px" disabled />
+      </tr>
+      <tr>
+        <td>Defense: </td><td><input type="text" name="def" size="5px"/></td><td>  </td>
+        <td>EV: </td><td><input type="text" name="evdef" size="5px"/></td>
+        <td>Judge: </td><td><input type="text" name="jdef" size="10px" list="judgeList"/></td>
+        <td>IV: </td><td><input type="text" id="ivdef" size="5px" disabled />
+      </tr>
+      <tr>
+        <td>Special Attack: </td><td><input type="text" name="spatk" size="5px"/></td><td>  </td>
+        <td>EV: </td><td><input type="text" name="evspatk" size="5px"/></td>
+        <td>Judge: </td><td><input type="text" name="jspatk" size="10px" list="judgeList"/></td>
+        <td>IV: </td><td><input type="text" id="ivspatk" size="5px" disabled />
+      </tr>
+      <tr>
+        <td>Special Defense: </td><td><input type="text" name="spdef" size="5px"/></td><td>  </td>
+        <td>EV: </td><td><input type="text" name="evspdef" size="5px"/></td>
+        <td>Judge: </td><td><input type="text" name="jspdef" size="10px" list="judgeList"/></td>
+        <td>IV: </td><td><input type="text" id="ivspdef" size="5px" disabled />
+      </tr>
+      <tr>
+        <td>Speed: </td><td><input type="text" name="spd" size="5px"/></td><td>  </td>
+        <td>EV: </td><td><input type="text" name="evspd" size="5px"/></td>
+        <td>Judge: </td><td><input type="text" name="jspd" size="10px" list="judgeList"/></td>
+        <td>IV: </td><td><input type="text" id="ivspd" size="5px" disabled />
+      </tr>
+    </table>
+    <br>
+    <input type="button" value="Calc IVs" onclick="formSubmit()" />
+    <input type="button" value="Clear" />
+  </form>
 </body>
 
 </html>
