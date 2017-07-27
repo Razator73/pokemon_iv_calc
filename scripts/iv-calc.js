@@ -1,7 +1,7 @@
 $( document ).ready(function() {
-  var pokemon = $('pokeList');
+  var pokemon = $('#pokeList');
   pokemon.empty();
   
-  var natures = $('natList');
+  var natures = $('#natList');
   natures.empty();
 }
