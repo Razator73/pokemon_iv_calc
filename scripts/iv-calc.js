@@ -1,7 +1,11 @@
 $( document ).ready(function() {
   var pokemon = $('#pokeList');
   pokemon.empty();
-  pokemon.append('<option value=' + dexNums.bulbasaur.species + ' />');
+  for (var poke in dexNums) {
+    if (dexNums.hasOwnProperty(poke)) {
+      pokemon.append('<option value=' + dexNums[poke].species + ' />');
+    }
+  }
   
   var natures = $('#natList');
   natures.empty();
