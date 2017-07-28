@@ -5,4 +5,4 @@ $( document ).ready(function() {
   
   var natures = $('#natList');
   natures.empty();
-}
+});
